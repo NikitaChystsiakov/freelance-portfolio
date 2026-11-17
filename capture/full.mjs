@@ -62,7 +62,9 @@ const STOPS = {
   } }],
 };
 
-const b = await chromium.launch({ channel: 'chrome', headless: true });
+// GPU=1 — рендер через видеокарту (тяжёлые страницы с видео иначе дёргаются в записи); HEADED=1 — с окном
+const GPU_ARGS = ['--use-angle=metal', '--enable-gpu-rasterization', '--ignore-gpu-blocklist', '--enable-zero-copy'];
+const b = await chromium.launch({ channel: 'chrome', headless: !process.env.HEADED, args: process.env.GPU ? GPU_ARGS : [] });
 for (const id of process.argv.slice(2)) {
   const vdir = path.join(OUT, `f-${id}`);
   fs.rmSync(vdir, { recursive: true, force: true });

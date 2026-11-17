@@ -26,6 +26,7 @@ python3 -m http.server 4210 --bind 127.0.0.1 --directory site
 2. Скриншоты и ролик: адрес демо в `capture/capture.mjs` (SITES), затем
    - `cd capture && node capture.mjs <id>` — скриншоты;
    - `node full.mjs <id>` — ролик всего сайта: клики фишки на первом экране (PRELUDE), остановки по пути (STOPS), плавная прокрутка до подвала; адрес в URLS;
+   - если страница тяжёлая (много видео, Lenis/GSAP) и ролик дёргается: `GPU=1 node smooth.mjs <id>` — покадровая съёмка с ровной прокруткой, сразу кладёт ролик в `site/media/` (process.mjs не нужен);
    - `node process.mjs <id>` — обрезка, ускорение, сжатие в `site/media/`.
 3. `node src/build.mjs` — пересобирает `site/index.html`.
 
