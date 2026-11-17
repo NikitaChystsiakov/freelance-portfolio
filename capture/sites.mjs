@@ -1,0 +1,17 @@
+export const SITES = {
+  dent32:     { url: 'http://127.0.0.1:4301/' },
+  zvezda:     { url: 'http://127.0.0.1:4302/' },
+  butsevichi: { url: 'http://localhost:4303/svadby' },
+  dobrahata:  { url: 'http://localhost:4304/' },
+  doctorvet:  { url: 'http://localhost:4305/' },
+  vetsas:     { url: 'http://localhost:4306/' },
+  vetpulse:   { url: 'http://localhost:4307/' },
+  lithos:     { url: 'http://localhost:4308/' },
+  carsify:    { url: 'https://carsifyby.vercel.app/' },
+  carusbrest: { url: 'https://carusbrest.vercel.app/' },
+  gonar:      { url: 'https://gonar-a-frame.vercel.app/' },
+  moydom:     { url: 'https://moydom-by-demo.vercel.app/' },
+  krasservis: { url: 'https://krasservis-demo.vercel.app/' },
+  listvich:   { url: 'https://listvich-demo.vercel.app/' },
+  kavahome:   { url: 'https://kavahome.vercel.app/' },
+};

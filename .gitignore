@@ -1,0 +1,11 @@
+capture/raw/
+capture/review/
+capture/sheets/
+capture/_*.jpg
+.DS_Store
+capture/_*
+capture/probe.json
+capture/dbg*.mjs
+capture/lit*.mjs
+.claude/
+.vercel
