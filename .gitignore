@@ -9,3 +9,4 @@ capture/dbg*.mjs
 capture/lit*.mjs
 .claude/
 .vercel
+.env*
