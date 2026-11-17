@@ -161,8 +161,11 @@ p { margin: 0; text-wrap: pretty; }
 .service { padding: 30px 32px 34px; border-radius: 22px; background: var(--paper); box-shadow: inset 0 0 0 1px var(--line); }
 .service h3 { font-weight: 800; font-size: clamp(24px, 2.2vw, 32px); margin-bottom: 12px; }
 .service h3::before { content: ''; display: block; width: 44px; height: 6px; border-radius: 3px; background: var(--lilac); margin-bottom: 20px; }
-.service p { max-width: 46ch; }
-.services__note { margin-top: 20px; font-size: 15px; color: var(--lilac-deep); font-weight: 600; }
+.service__how { max-width: 48ch; }
+.service__inc { margin: 24px 0 10px; font-weight: 700; font-size: 14px; color: var(--lilac-deep); }
+.service__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+.service__list li { position: relative; padding-left: 22px; max-width: 48ch; }
+.service__list li::before { content: ''; position: absolute; left: 2px; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--lilac); }
 
 /* ——— как работаю ——— */
 .how { background: var(--ink-2); padding: clamp(72px, 12vh, 140px) 0; }
